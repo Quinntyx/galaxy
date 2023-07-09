@@ -1,0 +1,14 @@
+{
+    "title" : "Example JSON",
+    "type" : "txt",
+    "source" : "Example",
+    "links" : [
+	{
+	    "target" : "example2",
+	    "strength" : 5
+	}
+    ],
+    "data" : {
+	"file" : "Example:example2.txt"
+    }
+}
