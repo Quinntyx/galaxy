@@ -54,11 +54,12 @@ class Node (NodeInterface) :
 
 
 class TextIngestManager (IngestManagerInterface) :
-    def ingest (self, path : str, source : str) -> str : 
+    def ingest (self, galaxy_root: str, path: str, source: str) -> str : 
         file = utils.FileHelper(path).prepend(source)
 
-        fs.copy(path, file.chext('match').file)
+        fs.copy(galaxy_root, path, file.chext('match').file)
         fs.dump(
+            galaxy_root,
             utils.construct_node_json(
                 file.filename_sect[1],
                 'txt',
@@ -70,7 +71,7 @@ class TextIngestManager (IngestManagerInterface) :
             ),
             str(file.chext('json').file)
         )
-        fs.copy(path, file.file)
+        fs.copy(galaxy_root, path, file.file)
         
         return str(file.filename)
 
