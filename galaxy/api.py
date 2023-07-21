@@ -35,7 +35,7 @@ class NodeInterface (metaclass=Interface) :
 
 
 class IngestManagerInterface (metaclass=Interface) :
-    def ingest (self, galaxy_dir) -> str : pass
+    def ingest (self, galaxy_root: str, target: str, source: str) -> str : pass
 
 
 class Match :
