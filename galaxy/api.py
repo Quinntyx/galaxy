@@ -1,9 +1,6 @@
 from .utils import Interface, default
 import fs
 
-class FsCopyIngestAction (IngestActionInterface) :
-    def __init__ (self, 
-    
 class NodeInterface (metaclass=Interface) :
     @property
     def content (self) :
