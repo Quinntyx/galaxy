@@ -1,5 +1,9 @@
 from .utils import Interface, default
+import fs
 
+class FsCopyIngestAction (IngestActionInterface) :
+    def __init__ (self, 
+    
 class NodeInterface (metaclass=Interface) :
     @property
     def content (self) :
@@ -34,7 +38,7 @@ class NodeInterface (metaclass=Interface) :
 
 
 class IngestManagerInterface (metaclass=Interface) :
-    def ingest (self) -> str : pass
+    def ingest (self, galaxy_dir) -> str : pass
 
 
 class Match :
