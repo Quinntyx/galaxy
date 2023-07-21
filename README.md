@@ -12,3 +12,9 @@ The greatest selling point of Galaxy, however, is its extensibility. To add supp
 
 If you see parallels between the data storage paradigm of Galaxy and Obsidian, you would be correct. However, Galaxy aims to be more extensible than Obsidian is, as well as more well-adapted to maintaining realtime databases managed by code instead of a person. 
 Ultimately, the goals of Galaxy and Obsidian are similar: to assist people with a second mind to store data. However, unlike Obsidian, Galaxy lets you put whatever human interface in front of it that you like. 
+
+## So, how do I use it? 
+
+The easiest way to use Galaxy is to clone this repo and add it to your codebase directly. Galaxy is currently not available on PyPi, though I am working on this. 
+
+After cloning the Galaxy repo, you can invoke it from a script running at the root of your project (same location that `run.py` is at). `run.py` is an example of how you could do this. 
